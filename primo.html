@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  let  numero = prompt('ingrese un numero');
+        let resultado ;
+        resultado1 = numero/numero;
+        resultado2= numero/1;
+       if (resulta1==1&&resultado==numero){
+        console.log("es un numero primo"+numero)
+       }*/
+       let  numero = parseInt (prompt('ingrese un numero'));
+       //cantidad = numero.length;{
+       
+       verificar=true
+      resultado=0;
+        for (i=2; i<numero ; i++){
+             resultado = numero / i ;   
+             console.log('resultado'+resultado);
+             if (numero%i==0){
+                    verificar=false;}
+                    i++;
+            }
+           
+              if (verificar==true){
+                console.log('es primo'+numero);
+              }
+              else {
+                console.log(' no es '+numero);
+              }
+    </script>
+     
+</body>
+</html>
